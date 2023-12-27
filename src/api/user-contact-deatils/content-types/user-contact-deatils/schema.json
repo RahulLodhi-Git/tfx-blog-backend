@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_contact_details",
+  "info": {
+    "singularName": "user-contact-deatils",
+    "pluralName": "user-contact-deatilss",
+    "displayName": "userContactDetail"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "userEmail": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "contactNumber": {
+      "type": "string",
+      "required": false
+    },
+    "message": {
+      "type": "richtext",
+      "required": false
+    }
+  }
+}
