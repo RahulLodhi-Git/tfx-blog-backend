@@ -10,7 +10,6 @@ const contactUsEmailTemplate = (response) => `<!DOCTYPE html>
 
         body {
             font-family: "Syne", ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-            ;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
@@ -19,7 +18,10 @@ const contactUsEmailTemplate = (response) => `<!DOCTYPE html>
 
         .container {
             max-width: 600px;
-            margin: 20px auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
             background-color: #ffffff;
             padding: 50px 20px;
             border-radius: 8px;
@@ -27,9 +29,9 @@ const contactUsEmailTemplate = (response) => `<!DOCTYPE html>
         }
 
         h1 {
-            color: #1b1b1b;
+            color: #5d62ee;
             font-size: 30px;
-
+            
         }
 
         p {
@@ -40,6 +42,8 @@ const contactUsEmailTemplate = (response) => `<!DOCTYPE html>
 
         .logo {
             text-align: center;
+            font-family: "Syne", ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+            color: #5d62ee;
         }
 
         .social-links {
@@ -54,10 +58,11 @@ const contactUsEmailTemplate = (response) => `<!DOCTYPE html>
         }
 
         .social-icon {
-            color: #b5ababfa;
+            color: #5d62ee;
             display: flex;
             font-size: 14px;
             transition: background-color 0.3s ease-in-out;
+            color: #5d62ee;
         }
 
         .social-icon:hover {
@@ -70,19 +75,25 @@ const contactUsEmailTemplate = (response) => `<!DOCTYPE html>
         }
 
         .logo h6 {
-            margin-block: 0;
+            margin-top: 0;
+            margin-bottom: 0;
             line-height: 1;
             letter-spacing: 2px;
             font-weight: 700;
             font-size: 25px;
+            font-family: "Syne";
+            color: #5d62ee;
         }
 
         .logo p {
-            margin-block: 0;
+            margin-top: 0;
+            margin-bottom: 0;
             letter-spacing: 4px;
             line-height: 1;
             font-size: 10px;
             font-weight: 600;
+            font-family: "Syne", ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+            color: #5d62ee;
         }
 
         a {
@@ -96,17 +107,23 @@ const contactUsEmailTemplate = (response) => `<!DOCTYPE html>
         }
 
         .gradient-text {
-            background-image: linear-gradient(-90deg, #5cc2ed 0, #5d62ee 25%, #c298d3 50%, currentColor 51%, currentColor 100%);
+            
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-size: 200% 100%;
             background-position: right;
             transition: background-position 0.4s ease;
+            background-clip:text;
+            fill:transparent;
+            -ms-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            
         }
 
         .fbtn {
             border: 1px solid;
-            font-family: var(--font-heading);
+            font-family: "Syne", ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
             font-size: 12px;
             line-height: 1.33em;
             letter-spacing: 0.2em;
@@ -171,7 +188,7 @@ const contactUsEmailTemplate = (response) => `<!DOCTYPE html>
             <div class="g-logo logo">
                 <a href="http://localhost:3000/">
                     <h6>
-                        <span class="gradient-text">FEBOC</span>
+                        <span class="gradient-text">ELEVATIZE</span>
                     </h6>
                     <p>
                         <span class="gradient-text">A SaaS Agency</span>

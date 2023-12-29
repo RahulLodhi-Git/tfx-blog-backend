@@ -1,15 +1,18 @@
 const nodemailer = require('nodemailer');
-const userEmail = process.env.MYEMAIL
-const userPass = process.env.MYPASS
+const user = process.env.MYEMAIL
+const pass = process.env.MYPASS
 // Create reusable transporter object using SMTP transport.
 const transporter = nodemailer.createTransport({
-    // host: 'localhost',
-    host: '127.0.0.1',
-    port: 25
+    host: process.env.EMAIL_HOST,
+    port: 465,
+    secure: true,
+    auth: {
+        user,
+        pass
+    }
 });
 transporter.verify(function (error, success) {
     if (error) {
-        console.log('dfd', error);
     } else {
         console.log("Server is ready to take our messages");
     }
@@ -20,15 +23,16 @@ module.exports = {
 
         // Setup e-mail data.
         const options = {
-            from: from,
-            to: 'rahul.lodhi5003@gmail.com',
+            from: `Elevatize Team <${from}>`,
+            to: [to],
+            cc: ['elevatize.2024@gmail.com'],
             subject: subject,
             html: html,
         };
         // Return a promise of the function that sends the email.
         return transporter.sendMail(options, (err, info) => {
-            if (err) console.log('sendmail erro', err)
-            if (info) console.log('sendmail info', info)
+            if (err) return
+            if (info) return
         })
     },
 };
