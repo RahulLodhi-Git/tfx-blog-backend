@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "user_contact_details",
+  "collectionName": "contact_details",
   "info": {
     "singularName": "user-contact-deatils",
     "pluralName": "user-contact-deatilss",
-    "displayName": "userContactDetail"
+    "displayName": "Customer Contacts"
   },
   "options": {
     "draftAndPublish": false
